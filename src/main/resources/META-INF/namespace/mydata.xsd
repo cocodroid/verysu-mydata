@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://www.verysu.com/schema/mydata"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:beans="http://www.springframework.org/schema/beans"
+            targetNamespace="http://www.verysu.com/schema/mydata"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified">
+    <xsd:import namespace="http://www.springframework.org/schema/beans" schemaLocation="http://www.springframework.org/schema/beans/spring-beans.xsd"/>
+
+    <xsd:element name="mydata">
+        <xsd:complexType>
+            <xsd:complexContent>
+                <xsd:extension base="beans:identifiedType">
+                    <xsd:sequence>
+                        <xsd:element ref="sourceTable"></xsd:element>
+                        <xsd:element ref="destTable"></xsd:element>
+                    </xsd:sequence>
+                    <xsd:attribute name="batchSize" type="xsd:integer" use="required"></xsd:attribute>
+                </xsd:extension>
+            </xsd:complexContent>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="sourceTable">
+        <xsd:complexType>
+            <xsd:attribute name="sql" type="xsd:string" use="required"></xsd:attribute>
+            <xsd:attribute name="delete" type="xsd:boolean" use="optional" default="false"></xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="destTable">
+        <xsd:complexType>
+            <xsd:attribute name="sql" type="xsd:string" use="required"></xsd:attribute>
+            <xsd:attribute name="idField" type="xsd:string" use="optional"></xsd:attribute>
+            <xsd:attribute name="idStrategy" type="xsd:string" use="optional"></xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
