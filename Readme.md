@@ -4,6 +4,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;
 _This framework supports migrating data from the same or heterogeneous mysql database_
 <br/>
-  1.0.0版本：只支持单表迁移
-  2.0.0版本（未发布）：同时支持多表迁移
+
+**版本声明**: <br/>
+  1.0.0版本（当前版本）：只支持单表数据迁移
+  <br/>
+
+  2.0.0版本（未来支持）：同时支持多表数据迁移
+  <br/>
+
  
