@@ -5,6 +5,8 @@
 _This framework supports migrating data from the same or heterogeneous mysql database_
 <br/>
 
+使用： https://github.com/cocodroid/verysu-mydata/wiki
+
 **版本声明**: <br/>
   1.0.0版本（当前版本）：只支持单表数据迁移
   <br/>
