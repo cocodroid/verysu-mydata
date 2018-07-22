@@ -6,7 +6,7 @@
 
     <groupId>com.verysu</groupId>
     <artifactId>verysu-mydata</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <properties>
         <spring.version>4.1.6.RELEASE</spring.version>
